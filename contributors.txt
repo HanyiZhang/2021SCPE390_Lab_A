@@ -1,31 +1,13 @@
 TA: Hanyi Zhang
-<<<<<<< HEAD
 Students: Joseph Perez
-=======
 Students: Claudia MacRae
-<<<<<<< HEAD
->>>>>>> 7fe67a19bf3f3de12459e33add63d256d24988a0
->>>>>>> 02f23b051137ada0740328ad2afd2920f5462fd4
-=======
->>>>>>> 7fe67a19bf3f3de12459e33add63d256d24988a0
 
 Anthony Paolantonio
-
-<<<<<<< HEAD
->>>>>>> 8c12ccfdfb0381a1e30accb47c8f39cebdcba7fa
-=======
 Matthew Petrin
-
 Zachary Kermitz
-
-<<<<<<< HEAD
 Eashan Kaushik
 
 Carlitos Rodriguez
-=======
-<<<<<<< HEAD
->>>>>>> c42b402723642b63448864180e03be3d75126cb4
-=======
 Eashan Kaushik
 >>>>>>> 0426f56d8d8f374061ffb662383cda1d3746b7e5
 =======
