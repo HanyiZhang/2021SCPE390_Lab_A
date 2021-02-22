@@ -208,7 +208,16 @@ int addToEach(double x[], int length, int delta) {
     return x;
 }
 
-// 8
+// 8 Eashan Kaushik 
+int countEvens(int x[], int length) {
+    int even_count = 0;
+    for (int i = 0; i < length; i++) {
+        if (x[i] % 2 == 0) {
+            even_count++;
+        }
+    }
+    return even_count;
+}
 
 // 8 Jonathan Cho
 int coutEvens(intx[], int length){
