@@ -62,7 +62,7 @@ int sumsq(int a, int b) {
     }
     return s;
 }
-// 4
+
 // 4 Jonathan Cho
 bool checkPrime(int a){
   bool isPrime = true;
@@ -82,6 +82,21 @@ bool checkPrime(int a){
       }
     }
   }
+}
+
+// 4 Matthew Petrin
+bool isPrime(int a){
+    if(a<=1){
+        return false;
+    }
+    else{
+        for(int i=2; i<a; i++){
+            if(a%i==0){
+                return false;
+            }
+        }
+    }
+    return true;
 }
 
 // 5 Zachary Kermitz
@@ -191,6 +206,15 @@ int prod(int x[], int length) {
     total = total * x[i];
   }
   return total;
+}
+
+// 4 Matthew Petrin
+int prod(int x[], int n){
+    int product=1;
+    for(int i=0; i<n; i++){
+        product *= x[i];
+    }
+    return product;
 }
 
 // 5 Trent Reichenbach
