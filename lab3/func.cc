@@ -11,8 +11,16 @@
 using namespace std;
 
 // scalar functions
-// 1
-int sum(int a, int b) {}
+// 1 Trent Reichenbach
+uint64_t sum(int a, int b)
+{
+	uint64_t sum = 0;
+	for(int i = a; i <= b; i++)
+	{
+		sum += i;
+	}
+	return sum;
+}
 // 2
 int prod(int a, int b) {}
 // 3
@@ -31,8 +39,13 @@ int diffsq(int a, int b) {}
 int mean2(int a, int b) {}
 // 10
 int mean3(int a, int b) {}
-// 11
-int min(int a, int b) {}
+// 11 Nikola Ciric
+int min(int a, int b) {
+ if (a < b) {
+    return a;
+  }
+  return b;
+}
 // 12
 int max(int a, int b) {}
 // 13
@@ -42,8 +55,16 @@ bool isEven(int a) {}
 double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
 
 // array functions
-// 1
-double mean(int x[], int length) {}
+// 1 Nikola Ciric
+double mean(int x[], int length) {
+ double sum = 0.0;
+    double average = 0.0;
+    for (int i = 0; i <length; i++) {
+      sum += x[i];
+    }
+    average = sum / length;
+    return average;
+}
 
 // 2
 int max(int x[], int length) {}
@@ -60,8 +81,15 @@ int prod(int x[], int length) {
   return total;
 }
 
-// 5
-int sum(int x[], int length) {}
+// 5 Trent Reichenbach
+int sum(int x[], int length) {
+	int sum = 0;
+	for(int i = 0; i < length; i++)
+	{
+		sum += x[i];
+	}
+	return sum;
+}
 
 // 6
 int demean(double x[], int length) { return 0; }
@@ -92,6 +120,7 @@ int main() {
        << '\n';  // should work no problem, right?
   cout << sum(1, 1000000)
        << '\n';  // what should this be? Don't assume it's right, check!
+	
 
   cout << prod(2, 5) << '\n';  // 2*3*4*5 = 120
   cout << prod(3, 10) << '\n';
@@ -149,4 +178,5 @@ int main() {
   int r2[] = {1, 2, 3, 4, 5, 6, 7, 8};
   reverse(r2, 8);
   print(r2, 8);
+  
 }
