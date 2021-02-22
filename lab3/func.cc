@@ -20,7 +20,7 @@ int sumsq(int a, int b) {}
 // 4
 bool isPrime(int a) {}
 // 5
-int coutPrimes(int a, int b) {}
+int countPrimes(int a, int b) {}
 // 6
 int gcd(int a, int b) {}
 // 7
@@ -29,8 +29,10 @@ int hypot(int a, int b) {}
 int diffsq(int a, int b) {}
 // 9
 int mean2(int a, int b) {}
-// 10
-int mean3(int a, int b) {}
+// 10 - Murad Arslaner
+double mean3(int a, int b, int c) { 
+  return (a + b + c) / 3.0;
+}
 // 11
 int min(int a, int b) {}
 // 12
@@ -69,12 +71,27 @@ int countEvens(int x[], int length) {}
 // 9
 int reverse(int x[], int length) { return 0; }
 
-// 10
-int round(double x[], int length) {}
+// 10 - Murad Arslaner
+int round(double x[], int length) {
+  for (int i = 0; i < length; i++) {
+    x[i] = round(x[i]);
+  }
+  return 0;
+}
 
 void print(int a[], int length) {
   for (int i = 0; i < length; i++) {
     cout << a[i] << " ";
+    if (i == (length - 1)) {
+      cout << endl;
+    }
+  }
+}
+
+//overloaded function
+void print(double a[], int length) {
+  for (int i = 0; i < length; i++) {
+    cout << a[i] << ", ";
     if (i == (length - 1)) {
       cout << endl;
     }
