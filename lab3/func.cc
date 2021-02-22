@@ -39,8 +39,13 @@ int diffsq(int a, int b) {}
 int mean2(int a, int b) {}
 // 10
 int mean3(int a, int b) {}
-// 11
-int min(int a, int b) {}
+// 11 Nikola Ciric
+int min(int a, int b) {
+ if (a < b) {
+    return a;
+  }
+  return b;
+}
 // 12
 int max(int a, int b) {}
 // 13
@@ -50,8 +55,16 @@ bool isEven(int a) {}
 double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
 
 // array functions
-// 1
-double mean(int x[], int length) {}
+// 1 Nikola Ciric
+double mean(int x[], int length) {
+ double sum = 0.0;
+    double average = 0.0;
+    for (int i = 0; i <length; i++) {
+      sum += x[i];
+    }
+    average = sum / length;
+    return average;
+}
 
 // 2
 int max(int x[], int length) {}
