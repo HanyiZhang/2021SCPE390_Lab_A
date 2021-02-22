@@ -62,7 +62,11 @@ int max(int a, int b) {}
 bool isEven(int a) {}
 
 // 14 
-double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
+double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {
+  double total =0;
+  total =((x3-x1)(x3-x1)+(y3-y1)(y3-y1))+((x2-x1)(x2-x1)+(y2-y1)(y2-y1))+((x3-x2)(x3-x2)+(y3-y2)(y3-y2));
+  return total;
+}
 
 // array functions
 // 1 Nikola Ciric
