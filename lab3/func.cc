@@ -33,12 +33,33 @@ int prod(int a. int b){
   return result;
 }
 
-// 3
-int sumsq(int a, int b) {}
+// 3 Anthony Paolantonio
+int sumsq(int a, int b) {
+    int sum = 0;
+    if(a <= b) {
+        for(int i = a; i <= b; i++){
+            sum += (i*i);
+        }
+    }
+    else {
+        for(int i = b; i <= a; i++){
+            sum += (i*i);
+        }
+    }
+    
+    return sum;
+}
 // 4
 bool isPrime(int a) {}
-// 5
-int coutPrimes(int a, int b) {}
+// 5 Zachary Kermitz
+int countPrimes(int a, int b) {
+  int cnt = 0;
+  for (int i = a; i <= b; i++){
+    if (isPrime(i) == true)
+      cnt++
+  }
+  return cnt;
+}
 // 6
 int gcd(int a, int b) {}
 // 7
@@ -83,8 +104,16 @@ double mean(int x[], int length) {
 // 2
 int max(int x[], int length) {}
 
-// 3
-int min(int x[], int length) {}
+// 3 Anthony Paolantonio
+int min(int x[], int length) {
+    int minval = x[0];
+    for(int i = 0; i < length; i++) {
+        if(minval > x[i]){
+            minval = x[i];
+        }
+    }
+    return minval;
+}
 
 // 4 Piotr Zelazny
 int prod(int x[], int length) {
@@ -105,6 +134,14 @@ int sum(int x[], int length) {
 	return sum;
 }
 
+// 5 Zachary Kermitz
+int sum( int x[], int len){
+  int res = 0;
+  for (int i = 0; i < len; i++){
+    res = res + x[i];
+  }
+  return res;
+}
 // 6
 int demean(double x[], int length) { return 0; }
 
