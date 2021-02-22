@@ -109,6 +109,15 @@ int gcd(int a, int b)
 
 // 7
 int hypot(int a, int b) {}
+// 7 Carlitos Rodriguez
+int hypot(int a, int b) {
+  a = a*a;
+  b = b*b;
+  int c;
+  c = a+b;
+  c = sqrt(c);
+  return c;
+}
 // 8 Eashan Kaushik
 int diffsq(int a, int b) {
     int sq = a*a - b*b;
