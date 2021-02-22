@@ -95,6 +95,18 @@ int countPrimes(int a, int b) {
 }
 // 6
 int gcd(int a, int b) {}
+
+// 6 Andrew Shamis
+int gcd(int a, int b)
+{
+  if (b == 0)
+    return a;
+
+  else
+   return gcd(b, a % b);
+}
+
+
 // 7
 int hypot(int a, int b) {}
 // 8 Eashan Kaushik
@@ -192,6 +204,24 @@ int sum( int x[], int len){
 }
 // 6
 int demean(double x[], int length) { return 0; }
+// 6 Andrew Shamis
+double demean(double x[], int length) {
+  double total = 0;
+  double mean = 0;
+
+  for (int i = 0; i < length; i++) {
+    total += x[i];
+  }
+
+  mean = total / length;
+
+  for (int i = 0; i < length; i++) {
+    x[i] -= mean;
+    cout << x[i] << " ";
+  }
+  return 0;
+}
+
 
 // 6 Gabriel Garcia
 int demean(double x[], int length) {
