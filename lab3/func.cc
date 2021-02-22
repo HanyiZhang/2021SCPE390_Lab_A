@@ -51,8 +51,15 @@ int sumsq(int a, int b) {
 }
 // 4
 bool isPrime(int a) {}
-// 5
-int coutPrimes(int a, int b) {}
+// 5 Zachary Kermitz
+int countPrimes(int a, int b) {
+  int cnt = 0;
+  for (int i = a; i <= b; i++){
+    if (isPrime(i) == true)
+      cnt++
+  }
+  return cnt;
+}
 // 6
 int gcd(int a, int b) {}
 // 7
@@ -75,7 +82,7 @@ int max(int a, int b) {}
 // 13
 bool isEven(int a) {}
 
-// 14
+// 14 
 double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
 
 // array functions
@@ -104,8 +111,14 @@ int min(int x[], int length) {
     return minval;
 }
 
-// 4
-int prod(int x[], int length) {}
+// 4 Piotr Zelazny
+int prod(int x[], int length) {
+  int total =1;
+  for(int i =0; i < length; i++) {
+    total = total * x[i];
+  }
+  return total;
+}
 
 // 5 Trent Reichenbach
 int sum(int x[], int length) {
@@ -117,6 +130,14 @@ int sum(int x[], int length) {
 	return sum;
 }
 
+// 5 Zachary Kermitz
+int sum( int x[], int len){
+  int res = 0;
+  for (int i = 0; i < len; i++){
+    res = res + x[i];
+  }
+  return res;
+}
 // 6
 int demean(double x[], int length) { return 0; }
 
