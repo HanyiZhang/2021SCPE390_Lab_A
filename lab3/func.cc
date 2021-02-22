@@ -32,7 +32,12 @@ int prod(int a, int b){
     result *= i;
   return result;
 }
-
+// 2 Claudia MacRae
+int prod(int a, int b){
+  int p =1;
+  for(int i = a; i <= b; i++) p*=i;
+  return p;
+}
 // 3 Anthony Paolantonio
 int sumsq(int a, int b) {
     int sum = 0;
@@ -123,8 +128,14 @@ double mean(int x[], int length) {
     return average;
 }
 
-// 2
-int max(int x[], int length) {}
+// 2 Claudia MacRae
+int max(int x[], int length) {
+  int max = x[0];
+  for(int i = 1; i < length; i++){
+    if(x[i] > max) max = x[i];
+  }
+  return max;
+}
 
 // 3 Anthony Paolantonio
 int min(int x[], int length) {
