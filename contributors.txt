@@ -1,31 +1,19 @@
 TA: Hanyi Zhang
-Students: Joseph Perez
-Students: Claudia MacRae
-
+Students: 
+Joseph Perez
+Claudia MacRae
 Anthony Paolantonio
 Matthew Petrin
 Zachary Kermitz
 Eashan Kaushik
-
 Carlitos Rodriguez
 Eashan Kaushik
->>>>>>> 0426f56d8d8f374061ffb662383cda1d3746b7e5
-=======
 Rhys Lee
-
 Murad Arslaner
->>>>>>> 457d4129c8e0386821a73fa7ca5c759a9edd8d86
-
 Nikola Ciric
-
 John McDermott
-
 Jonathan Cho
-
 Piotr Zelazny
-
 Trent Reichenbach
-
 Gabriel Garcia
-
 Justin Ahn
