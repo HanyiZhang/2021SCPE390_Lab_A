@@ -11,16 +11,55 @@
 using namespace std;
 
 // scalar functions
-// 1
-int sum(int a, int b) {}
+// 1 Trent Reichenbach
+uint64_t sum(int a, int b)
+{
+	uint64_t sum = 0;
+	for(int i = a; i <= b; i++)
+	{
+		sum += i;
+	}
+	return sum;
+}
 // 2
 int prod(int a, int b) {}
-// 3
-int sumsq(int a, int b) {}
+
+// 2 Gabriel Garcia
+
+int prod(int a, int b){
+  int result = 1;
+  for(int i = a; i <= b; i++)
+    result *= i;
+  return result;
+}
+
+// 3 Anthony Paolantonio
+int sumsq(int a, int b) {
+    int sum = 0;
+    if(a <= b) {
+        for(int i = a; i <= b; i++){
+            sum += (i*i);
+        }
+    }
+    else {
+        for(int i = b; i <= a; i++){
+            sum += (i*i);
+        }
+    }
+    
+    return sum;
+}
 // 4
 bool isPrime(int a) {}
-// 5
-int countPrimes(int a, int b) {}
+// 5 Zachary Kermitz
+int countPrimes(int a, int b) {
+  int cnt = 0;
+  for (int i = a; i <= b; i++){
+    if (isPrime(i) == true) 
+      cnt++;
+  }
+  return cnt;
+}
 // 6
 int gcd(int a, int b) {}
 // 7
@@ -33,34 +72,94 @@ int mean2(int a, int b) {}
 double mean3(int a, int b, int c) { 
   return (a + b + c) / 3.0;
 }
-// 11
-int min(int a, int b) {}
+// 11 Nikola Ciric
+int min(int a, int b) {
+ if (a < b) {
+    return a;
+  }
+  return b;
+}
 // 12
 int max(int a, int b) {}
 // 13
 bool isEven(int a) {}
 
-// 14
-double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
+// 14 Piotr Zelazny
+double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {
+  double total =0;
+  total =((x3-x1)(x3-x1)+(y3-y1)(y3-y1))+((x2-x1)(x2-x1)+(y2-y1)(y2-y1))+((x3-x2)(x3-x2)+(y3-y2)(y3-y2));
+  return total;
+}
 
 // array functions
-// 1
-double mean(int x[], int length) {}
+// 1 Nikola Ciric
+double mean(int x[], int length) {
+ double sum = 0.0;
+    double average = 0.0;
+    for (int i = 0; i <length; i++) {
+      sum += x[i];
+    }
+    average = sum / length;
+    return average;
+}
 
 // 2
 int max(int x[], int length) {}
 
-// 3
-int min(int x[], int length) {}
+// 3 Anthony Paolantonio
+int min(int x[], int length) {
+    int minval = x[0];
+    for(int i = 0; i < length; i++) {
+        if(minval > x[i]){
+            minval = x[i];
+        }
+    }
+    return minval;
+}
 
-// 4
-int prod(int x[], int length) {}
+// 4 Piotr Zelazny
+int prod(int x[], int length) {
+  int total =1;
+  for(int i =0; i < length; i++) {
+    total = total * x[i];
+  }
+  return total;
+}
 
-// 5
-int sum(int x[], int length) {}
+// 5 Trent Reichenbach
+int sum(int x[], int length) {
+	int sum = 0;
+	for(int i = 0; i < length; i++)
+	{
+		sum += x[i];
+	}
+	return sum;
+}
 
+// 5 Zachary Kermitz
+int sum( int x[], int len){
+  int res = 0;
+  for (int i = 0; i < len; i++){
+    res = res + x[i];
+  }
+  return res;
+}
 // 6
 int demean(double x[], int length) { return 0; }
+
+// 6 Gabriel Garcia
+int demean(double x[], int length) {
+  double mean = 0;
+  for(int i=0; i < length; i++)
+    mean += x[i];
+  
+  mean /= length;
+
+  for(int i =0; i < length; i++)
+    x[i] -= mean;
+  
+  return 0;
+}
 
 // 7
 int addToEach(double x[], int length, int delta) {}
@@ -103,6 +202,7 @@ int main() {
        << '\n';  // should work no problem, right?
   cout << sum(1, 1000000)
        << '\n';  // what should this be? Don't assume it's right, check!
+	
 
   cout << prod(2, 5) << '\n';  // 2*3*4*5 = 120
   cout << prod(3, 10) << '\n';
@@ -160,4 +260,5 @@ int main() {
   int r2[] = {1, 2, 3, 4, 5, 6, 7, 8};
   reverse(r2, 8);
   print(r2, 8);
+  
 }
