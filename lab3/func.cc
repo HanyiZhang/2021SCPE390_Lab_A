@@ -54,6 +54,14 @@ int sumsq(int a, int b) {
     
     return sum;
 }
+//3 Justin Ahn
+int sumsq(int a, int b) {
+    int s;
+    for (int i = a; i <= b; i++){
+        s += i * i;
+    }
+    return s;
+}
 // 4
 // 4 Jonathan Cho
 bool checkPrime(int a){
@@ -192,8 +200,13 @@ int demean(double x[], int length) {
   return 0;
 }
 
-// 7
-int addToEach(double x[], int length, int delta) {}
+// 7 Justin Ahn
+int addToEach(double x[], int length, int delta) {
+  for (int i = 0; i < length; i ++){
+        x[i] += delta;
+    }
+    return x;
+}
 
 // 8
 
