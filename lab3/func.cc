@@ -15,6 +15,16 @@ using namespace std;
 int sum(int a, int b) {}
 // 2
 int prod(int a, int b) {}
+
+// 2 Gabriel Garcia
+
+int prod(int a. int b){
+  int result = 1;
+  for(int i = a; i <= b; i++)
+    result *= i;
+  return result;
+}
+
 // 3
 int sumsq(int a, int b) {}
 // 4
@@ -72,6 +82,20 @@ int sum(int x[], int length) {}
 
 // 6
 int demean(double x[], int length) { return 0; }
+
+// 6 Gabriel Garcia
+int demean(double x[], int length) {
+  double mean = 0;
+  for(int i=0; i < length; i++)
+    mean += x[i];
+  
+  mean /= length;
+
+  for(int i =0; i < length; i++)
+    x[i] -= mean;
+  
+  return 0;
+}
 
 // 7
 int addToEach(double x[], int length, int delta) {}
