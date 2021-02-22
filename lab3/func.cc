@@ -50,7 +50,27 @@ int sumsq(int a, int b) {
     return sum;
 }
 // 4
-bool isPrime(int a) {}
+// 4 Jonathan Cho
+bool checkPrime(int a){
+  bool isPrime = true;
+  if(a==0 || a==1){
+    isPrime = false;
+    return isPrime;
+  }
+  if(a == 2){
+    return isPrime;
+  }
+  else{
+    for (int c = 2; c <= a/2; c++){
+      if(a % c == 0){
+	isPrime = false;
+	return isPrime;
+	break;
+      }
+    }
+  }
+}
+
 // 5 Zachary Kermitz
 int countPrimes(int a, int b) {
   int cnt = 0;
@@ -165,7 +185,18 @@ int demean(double x[], int length) {
 int addToEach(double x[], int length, int delta) {}
 
 // 8
-int countEvens(int x[], int length) {}
+
+// 8 Jonathan Cho
+int coutEvens(intx[], int length){
+  int evens = 0;
+  for(int i = 0; i < length; i++){
+    if(x[i] % 2 ==0){
+      evens++;
+    }
+  }
+  return evens;
+}
+
 
 // 9
 int reverse(int x[], int length) { return 0; }
