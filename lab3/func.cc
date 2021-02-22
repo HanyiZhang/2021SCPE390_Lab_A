@@ -102,8 +102,12 @@ int diffsq(int a, int b) {
     int sq = a*a - b*b;
     return sq;
 }
-// 9
-int mean2(int a, int b) {}
+// 9 Rhys Lee
+int mean2(int a, int b) {
+    int average;
+  average = (a+b)/2;
+  return average;
+}
 // 10 - Murad Arslaner
 double mean3(int a, int b, int c) { 
   return (a + b + c) / 3.0;
@@ -234,8 +238,17 @@ int coutEvens(intx[], int length){
 }
 
 
-// 9
-int reverse(int x[], int length) { return 0; }
+// 9 Rhys Lee
+int reverse(int x[], int length) {  int temparray[length];
+  int count=0;
+  for(int i = length-1; i>=0; i--){
+    temparray[count]=x[i];
+    count = count + 1;
+  }
+  for(int i = 0; i<length; i++){
+    x[i]=temparray[i];
+  }
+  return 0;}
 
 // 10 - Murad Arslaner
 int round(double x[], int length) {
