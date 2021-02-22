@@ -23,6 +23,16 @@ uint64_t sum(int a, int b)
 }
 // 2
 int prod(int a, int b) {}
+
+// 2 Gabriel Garcia
+
+int prod(int a. int b){
+  int result = 1;
+  for(int i = a; i <= b; i++)
+    result *= i;
+  return result;
+}
+
 // 3
 int sumsq(int a, int b) {}
 // 4
@@ -58,7 +68,7 @@ int max(int a, int b) {}
 // 13
 bool isEven(int a) {}
 
-// 14
+// 14 
 double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
 
 // array functions
@@ -79,8 +89,14 @@ int max(int x[], int length) {}
 // 3
 int min(int x[], int length) {}
 
-// 4
-int prod(int x[], int length) {}
+// 4 Piotr Zelazny
+int prod(int x[], int length) {
+  int total =1;
+  for(int i =0; i < length; i++) {
+    total = total * x[i];
+  }
+  return total;
+}
 
 // 5 Trent Reichenbach
 int sum(int x[], int length) {
@@ -102,6 +118,20 @@ int sum( int x[], int len){
 }
 // 6
 int demean(double x[], int length) { return 0; }
+
+// 6 Gabriel Garcia
+int demean(double x[], int length) {
+  double mean = 0;
+  for(int i=0; i < length; i++)
+    mean += x[i];
+  
+  mean /= length;
+
+  for(int i =0; i < length; i++)
+    x[i] -= mean;
+  
+  return 0;
+}
 
 // 7
 int addToEach(double x[], int length, int delta) {}
