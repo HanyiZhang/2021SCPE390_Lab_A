@@ -1,0 +1,35 @@
+
+                                scalar function ID               array function ID
+Joseph Perez                           1                              1
+
+Claudia MacRae                         2                              2
+
+Anthony Paolantonio                    3                              3
+
+Matthew Petrin                         4                              4
+
+Zachary Kermitz                        5                              5
+
+Eashan Kaushik                         6                              6
+
+Carlitos Rodriguez                     7                              7
+
+Eashan Kaushik                         8                              8
+
+Rhys Lee                               9                              9
+
+Murad Arslaner                         10                             10
+
+Nikola Ciric                           11                             1
+
+John McDermott                         12                             2
+
+Jonathan Cho                           13                             3
+
+Piotr Zelazny                          14                             4
+
+Trent Reichenbach                      1                              5
+
+Gabriel Garcia                         2                              6
+
+Justin Ahn                             3                              7
