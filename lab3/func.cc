@@ -38,7 +38,7 @@ int max(int a, int b) {}
 // 13
 bool isEven(int a) {}
 
-// 14
+// 14 
 double perimeter3(int x1, int y1, int x2, int y2, int x3, int y3) {}
 
 // array functions
@@ -51,8 +51,14 @@ int max(int x[], int length) {}
 // 3
 int min(int x[], int length) {}
 
-// 4
-int prod(int x[], int length) {}
+// 4 Piotr Zelazny
+int prod(int x[], int length) {
+  int total =1;
+  for(int i =0; i < length; i++) {
+    total = total * x[i];
+  }
+  return total;
+}
 
 // 5
 int sum(int x[], int length) {}
