@@ -33,8 +33,22 @@ int prod(int a. int b){
   return result;
 }
 
-// 3
-int sumsq(int a, int b) {}
+// 3 Anthony Paolantonio
+int sumsq(int a, int b) {
+    int sum = 0;
+    if(a <= b) {
+        for(int i = a; i <= b; i++){
+            sum += (i*i);
+        }
+    }
+    else {
+        for(int i = b; i <= a; i++){
+            sum += (i*i);
+        }
+    }
+    
+    return sum;
+}
 // 4
 bool isPrime(int a) {}
 // 5
@@ -79,8 +93,16 @@ double mean(int x[], int length) {
 // 2
 int max(int x[], int length) {}
 
-// 3
-int min(int x[], int length) {}
+// 3 Anthony Paolantonio
+int min(int x[], int length) {
+    int minval = x[0];
+    for(int i = 0; i < length; i++) {
+        if(minval > x[i]){
+            minval = x[i];
+        }
+    }
+    return minval;
+}
 
 // 4
 int prod(int x[], int length) {}
