@@ -278,6 +278,17 @@ int addToEach(double x[], int length, int delta) {
     return x;
 }
 
+// 7 Carlitos Rodriguez
+int addToEach(double x[], int length, int delta){
+  int i = 0;
+  while(i < length){
+    x[i] = x[i]+delta;
+    cout << x[i] << ", ";
+    i++;
+  }
+  return 0;
+}
+
 // 8 Eashan Kaushik 
 int countEvens(int x[], int length) {
     int even_count = 0;
