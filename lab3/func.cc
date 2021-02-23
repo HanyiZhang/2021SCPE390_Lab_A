@@ -155,8 +155,13 @@ int min(int a, int b) {
   }
   return b;
 }
-// 12
-int max(int a, int b) {}
+// 12 John McDermott
+int max(int a, int b) {
+  if (a > b)
+    return a;
+  else
+    return b;
+}
 // 13
 bool isEven(int a) {}
 
@@ -187,6 +192,16 @@ int max(int x[], int length) {
   }
   return max;
 }
+
+// 2 John McDermott
+int max(int x[], int length){
+  int value = x[0];
+  for (int i = 1; i < length; i++){
+    if(x[i] > value)
+      max = x[i];
+   }
+  return value;
+ }
 
 // 3 Anthony Paolantonio
 int min(int x[], int length) {
